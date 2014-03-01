@@ -128,7 +128,7 @@ module.exports =
 
   # Returns the editor's syntax mode.
   getSyntax: ->
-    grammar = @editor.getGrammar().scopeName.toLowerCase()
+    grammar = @editor.getGrammar().scopeName
     if /\b(less|scss|sass|css|stylus)\b/.test(grammar)
       return "css"
     else if /\b(html|xml|haml|slim)\b/.test(grammar)
